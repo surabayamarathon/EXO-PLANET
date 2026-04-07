@@ -3,243 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EXO PLANET #6 - EXplOrizon</title>
-<link rel="stylesheet" href="style.css">
-}
+<title>EXO PLANET #6 - EXplOrizon Jakarta</title>
 
+<style>
 body {
+    margin: 0;
     font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0b132b, #1c2541);
     color: white;
-
-    background:
-        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.95)),
-        url('images/exo-bg.jpg');
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
-/* CONTAINER */
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
 
-/* HERO */
-.hero {
+/* HEADER */
+.header {
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px;
 }
 
-.hero h1 {
-    font-size: 42px;
-    letter-spacing: 2px;
-    text-shadow: 0 0 20px rgba(255,255,255,0.3);
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-.hero p {
-    margin-top: 10px;
+.header p {
+    font-size: 18px;
     opacity: 0.8;
 }
-
-/* INFO */
-.info {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
-
-.info div {
-    background: rgba(255,255,255,0.1);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
-/* GLASS CARD */
-.card {
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(12px);
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
-
-/* TABLE */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 12px;
-}
-
-th {
-    background: rgba(255,255,255,0.1);
-}
-
-tr:hover {
-    background: rgba(255,255,255,0.05);
-}
-
-/* FORM */
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 15px;
-    border-radius: 8px;
-    border: none;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-/* BUTTON */
-button {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(45deg, #3a86ff, #8338ec);
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.9;
-}
-
-/* FOOTER */
-.footer {
-    text-align: center;
-    margin: 40px 0;
-    opacity: 0.7;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-}
-</style>
-
-</head>
-
-<body>
-
-<div class="navbar container">
-  <div class="logo">EXO PLANET</div>
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Event</a></li>
-    <li><a href="#">Register</a></li>
-  </ul>
-</div>
-
-<section class="hero container">
-  <div class="hero-content">
-    <h1>EXO PLANET <span>#6</span></h1>
-    <p>Join the biggest event in Surabaya 2026</p>
-    <a href="#" class="btn">Register Now</a>
-  </div>
-</section>
-    <
-
-    <!-- INFO -->
-    <div class="info">
-        <div>📍 Indonesia Arena</div>
-        <div>🎤 Live Concert</div>
-        <div>🔥 Limited Ticket</div>
-    </div>
-
-    <!-- PRICE -->
-    <div class="card">
-        <h2>Harga Tiket</h2>
-        <table>
-            <tr>
-                <th>Kategori</th>
-                <th>Tipe</th>
-                <th>Harga</th>
-            </tr>
-            <tr><td>CAT E / X / O / L</td><td>Standing + Soundcheck</td><td>Rp 3.500.000</td></tr>
-            <tr><td>Horizon Box</td><td>Seating + Soundcheck</td><td>Rp 3.950.000</td></tr>
-            <tr><td>CAT 1</td><td>Seating + Soundcheck</td><td>Rp 3.550.000</td></tr>
-            <tr><td>CAT 2</td><td>Seating</td><td>Rp 3.300.000</td></tr>
-            <tr><td>CAT 3</td><td>Seating</td><td>Rp 2.700.000</td></tr>
-            <tr><td>CAT 4</td><td>Seating</td><td>Rp 2.250.000</td></tr>
-            <tr><td>CAT 5</td><td>Seating</td><td>Rp 2.000.000</td></tr>
-            <tr><td>CAT 6</td><td>Seating</td><td>Rp 1.550.000</td></tr>
-        </table>
-        <p style="margin-top:10px; font-size:13px; opacity:0.7;">
-            *Belum termasuk pajak 10% & biaya platform 5%
-        </p>
-    </div>
-
-    <!-- FORM -->
-    <div class="card">
-        <h2>Formulir Pendaftaran</h2>
-
-        <div class="grid">
-            <div>
-                <input type="text" placeholder="Nama Lengkap">
-                <input type="text" placeholder="NIK / Identitas">
-                <input type="date">
-                <select>
-                    <option>Jenis Kelamin</option>
-                    <option>Laki-laki</option>
-                    <option>Perempuan</option>
-                </select>
-            </div>
-
-            <div>
-                <input type="text" placeholder="No WhatsApp">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Alamat">
-                <input type="number" placeholder="Jumlah Tiket">
-            </div>
-        </div>
-
-        <select>
-            <option>Pilih Kategori Tiket</option>
-            <option>CAT E / X / O / L</option>
-            <option>Horizon Box</option>
-            <option>CAT 1</option>
-            <option>CAT 2</option>
-            <option>CAT 3</option>
-            <option>CAT 4</option>
-            <option>CAT 5</option>
-            <option>CAT 6</option>
-        </select>
-
-        <select>
-            <option>Metode Pembayaran</option>
-            <option>Transfer Bank</option>
-            <option>QRIS</option>
-            <option>E-Wallet</option>
-        </select>
-
-        <button>Daftar Sekarang</button>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-        © 2026 EXO PLANET EVENT
-    </div>
-
-</div>
-
-</body>
-</html>
