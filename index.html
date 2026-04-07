@@ -1,36 +1,134 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EXO PLANET #6 - EXplOrizon Jakarta</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXO PLANET #6 - EXplOrizOn in Jakarta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-black to-gray-900 text-white">
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom, #0b132b, #1c2541);
-    color: white;
-}
+  <!-- HERO -->
+  <section class="text-center py-16">
+    <h1 class="text-5xl font-bold tracking-wide">EXO PLANET #6</h1>
+    <p class="text-3xl mt-4 font-semibold">EXplOrizOn in Jakarta</p>
+    <p class="mt-2 text-gray-400">Indonesia Arena • 7 Juni 2026 • 15:00 WIB</p>
+  </section>
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
+  <!-- SEAT MAP INFO -->
+  <section class="max-w-6xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">Kategori & Harga Tiket</h2>
 
-/* HEADER */
-.header {
-    text-align: center;
-    padding: 50px 20px;
-}
+    <div class="grid md:grid-cols-3 gap-4 text-sm">
+      <div class="bg-gray-800 p-4 rounded-2xl">
+        <h3 class="font-bold">CAT E / X / O / L (Standing + Soundcheck)</h3>
+        <p>IDR 3.500.000</p>
+      </div>
 
-.header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
+      <div class="bg-gray-800 p-4 rounded-2xl">
+        <h3 class="font-bold">Horizon Box (Seating + Soundcheck)</h3>
+        <p>IDR 3.950.000</p>
+      </div>
 
-.header p {
-    font-size: 18px;
-    opacity: 0.8;
-}
+      <div class="bg-gray-800 p-4 rounded-2xl">
+        <h3 class="font-bold">CAT 1 (Seating + Soundcheck)</h3>
+        <p>IDR 3.550.000</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-2xl">
+        <h3 class="font-bold">CAT 2 (Seating)</h3>
+        <p>IDR 3.300.000</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-2xl">
+        <h3 class="font-bold">CAT 3 (Seating)</h3>
+        <p>IDR 2.700.000</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-2xl">
+        <h3 class="font-bold">CAT 4 (Seating)</h3>
+        <p>IDR 2.250.000</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-2xl">
+        <h3 class="font-bold">CAT 5 (Seating)</h3>
+        <p>IDR 2.000.000</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-2xl">
+        <h3 class="font-bold">CAT 6 (Seating)</h3>
+        <p>IDR 1.550.000</p>
+      </div>
+    </div>
+
+    <p class="text-gray-400 mt-4 text-sm">* Harga belum termasuk pajak 10% & biaya platform 5%</p>
+  </section>
+
+  <!-- FORM PEMBELIAN -->
+  <section class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">Formulir Pembelian Tiket</h2>
+
+    <form id="form" class="grid md:grid-cols-2 gap-4">
+      <input required placeholder="Nama Lengkap" class="p-2 rounded text-black" />
+      <input required placeholder="Nomor KTP / Identitas" class="p-2 rounded text-black" />
+      <input required type="date" class="p-2 rounded text-black" />
+
+      <select class="p-2 rounded text-black">
+        <option>Jenis Kelamin</option>
+        <option>Laki-laki</option>
+        <option>Perempuan</option>
+      </select>
+
+      <input required placeholder="Nomor WhatsApp" class="p-2 rounded text-black" />
+      <input required type="email" placeholder="Email" class="p-2 rounded text-black" />
+
+      <input required placeholder="Alamat Lengkap" class="p-2 rounded text-black col-span-2" />
+
+      <select id="ticket" required class="p-2 rounded text-black col-span-2">
+        <option value="">Pilih Kategori Tiket</option>
+        <option>CAT E / X / O / L</option>
+        <option>Horizon Box</option>
+        <option>CAT 1</option>
+        <option>CAT 2</option>
+        <option>CAT 3</option>
+        <option>CAT 4</option>
+        <option>CAT 5</option>
+        <option>CAT 6</option>
+      </select>
+
+      <input type="number" placeholder="Jumlah Tiket" class="p-2 rounded text-black col-span-2" required />
+
+      <select class="p-2 rounded text-black col-span-2">
+        <option>Transfer Bank</option>
+        <option>QRIS</option>
+        <option>E-Wallet</option>
+      </select>
+
+      <input type="file" class="p-2 rounded bg-white text-black col-span-2" />
+
+      <button type="submit" class="bg-green-500 py-2 rounded col-span-2">Submit Pembelian</button>
+    </form>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+    <div class="bg-white text-black p-6 rounded-2xl text-center">
+      <h3 class="text-xl font-bold">Pembelian Berhasil</h3>
+      <p class="mt-2">Silakan tunggu konfirmasi admin 🎫</p>
+      <button onclick="closeModal()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Tutup</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('modal').classList.remove('hidden');
+    });
+
+    function closeModal() {
+      document.getElementById('modal').classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
