@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXO PLANET #6 - EXplOrizon Jakarta</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0b132b, #1c2541);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* INFO */
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.info div {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* FORM */
+.form-section {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #3a86ff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #265dbe;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>EXO PLANET #6 – EXplOrizon</h1>
+        <p>Jakarta Concert Experience 2026</p>
+    </div>
+
+    <!-- INFO -->
+    <div class="info">
+        <div>📍 Indonesia Arena</div>
+        <div>📅 7 Juni 2026</div>
+        <div>⏰ 15.00 WIB</div>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-section">
+        <h2>Formulir Pendaftaran</h2>
+
+        <div class="grid">
+            <div>
+                <label>Nama Lengkap</label>
+                <input type="text" placeholder="Masukkan nama lengkap">
+
+                <label>NIK / Identitas</label>
+                <input type="text">
+
+                <label>Tanggal Lahir</label>
+                <input type="date">
+
+                <label>Jenis Kelamin</label>
+                <select>
+                    <option>Laki-laki</option>
+                    <option>Perempuan</option>
+                </select>
+            </div>
+
+            <div>
+                <label>No WhatsApp</label>
+                <input type="text">
+
+                <label>Email</label>
+                <input type="email">
+
+                <label>Alamat</label>
+                <input type="text">
+
+                <label>Jumlah Tiket</label>
+                <input type="number" min="1">
+            </div>
+        </div>
+
+        <h2>Pilihan Tiket</h2>
+        <select>
+            <option>CAT E / X / O / L (Standing - Soundcheck)</option>
+            <option>Horizon Box</option>
+            <option>CAT 1</option>
+            <option>CAT 2</option>
+            <option>CAT 3</option>
+            <option>CAT 4</option>
+            <option>CAT 5</option>
+            <option>CAT 6</option>
+        </select>
+
+        <h2>Metode Pembayaran</h2>
+        <select>
+            <option>Transfer Bank</option>
+            <option>QRIS</option>
+            <option>E-Wallet</option>
+        </select>
+
+        <button>Daftar Sekarang</button>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2026 EXO PLANET EVENT | All Rights Reserved
+    </div>
+
+</div>
+
+</body>
+</html>
